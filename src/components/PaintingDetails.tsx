@@ -1,4 +1,4 @@
-import  Painting  from '../pages/index';
+import { Painting } from '@/models/Painting'; 
 import { supabase } from '../lib/supabaseClient'
 
 type PaintingDetailsProps = {
@@ -11,7 +11,7 @@ export default function PaintingDetails({ painting, onClose }: PaintingDetailsPr
     <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
       <div className="bg-white rounded-lg max-w-4xl w-full max-h-[90vh] overflow-auto">
         <div className="p-4 flex justify-between items-center border-b">
-          <h2 className="text-2xl font-bold">{painting.title}</h2>
+          <h2 className="text-2xl font-bold">{painting.name}</h2>
           <button 
             onClick={onClose}
             className="text-gray-500 hover:text-gray-700"
@@ -26,7 +26,7 @@ export default function PaintingDetails({ painting, onClose }: PaintingDetailsPr
           <div className="md:w-1/2 p-4">
             <img 
               src={painting.image_url} 
-              alt={painting.title} 
+              alt={painting.name} 
               className="w-full h-auto object-contain max-h-[60vh]"
             />
           </div>
@@ -34,7 +34,7 @@ export default function PaintingDetails({ painting, onClose }: PaintingDetailsPr
           <div className="md:w-1/2 p-4">
             <div className="mb-4">
               <h3 className="text-lg font-medium text-gray-900">Artiste</h3>
-              <p className="text-gray-600">{painting.artist}</p>
+              <p className="text-gray-600">Florence Henry</p>
             </div>
             
             {painting.description && (

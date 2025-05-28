@@ -1,7 +1,8 @@
 'use client';
 
-import Menu from '@/components/Menu';
-import AccueilView from '../pages/AccueilView';
+import { useState, useEffect } from 'react';
+import { supabase } from './lib/supabaseClient';
+import AccueilView from './pages/AccueilView';
 export type Painting = {
   id: string;
   name: string;
@@ -12,10 +13,53 @@ export type Painting = {
 };
 
 export default function Home() {
- 
-  return (
+  const [, setPaintings] = useState<Painting[]>([]);
+  const [, setLoading] = useState(true);
+  const [, ] = useState<Painting | null>(null);
 
-   <><Menu></Menu><AccueilView></AccueilView></>
+  useEffect(() => {
+    fetchPaintings();
+  }, []);
+
+  const fetchPaintings = async () => {
+    try {
+
+
+      // Fetch data from the 'images' table
+   const { data, error } = await supabase
+  .from('Paintings')
+  .select('*')
+
+      if (error) {
+        console.error('Erreur lors de la récupération des peintures:', error.message);
+        return;
+      }
+      console.table("tttt"+data)
+
+      if (data) {
+        console.table(data)
+
+        // Transform the data to match the Painting type
+        const transformedData: Painting[] = data.map(item => ({
+          id: item.id,
+          name: item.name || 'Sans titre', // Use a default title if not available
+          description: item.description,
+          image_url: item.image_url, // Map the url field to image_url
+          created_at: item.created_at,
+          year: item.year
+        }));
+
+        setPaintings(transformedData);
+      }
+    } catch (error) {
+      console.error('Erreur inattendue:', error);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  return (
+    <AccueilView></AccueilView>
 //     <div className="min-h-screen p-8">
 //       <header className="mb-8">
 //         <h1 className="text-3xl font-bold text-center">Galerie de Peintures</h1>
