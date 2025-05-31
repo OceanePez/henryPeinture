@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { supabase } from './lib/supabaseClient';
-import AccueilView from './pages/AccueilView';
+import AccueilView from './components/AccueilView';
 export type Painting = {
   id: string;
   name: string;

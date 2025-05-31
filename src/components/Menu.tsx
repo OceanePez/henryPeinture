@@ -1,5 +1,6 @@
-import { useState } from "react";
-
+'use client'
+import Link from 'next/link';
+import { useState } from 'react';
 export default function Menu (){
 
         const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -31,35 +32,30 @@ export default function Menu (){
 
           {/* Menu Items */}
           <nav className="space-y-6">
-            <a href="#" className="group block py-3 border-b border-gray-100 hover:border-gray-300 transition-all duration-300">
+            <Link href="/" className="group block py-3 border-b border-gray-100 hover:border-gray-300 transition-all duration-300">
               <span className="text-xl font-light text-gray-900 group-hover:text-gray-600 transition-colors duration-300">Présentation</span>
               <p className="text-sm text-gray-500 mt-1 group-hover:text-gray-600 transition-colors duration-300">L'artiste et son univers</p>
-            </a>
+            </Link>
             
-            <a href="#" className="group block py-3 border-b border-gray-100 hover:border-gray-300 transition-all duration-300">
+            <Link href="/galerie" className="group block py-3 border-b border-gray-100 hover:border-gray-300 transition-all duration-300">
               <span className="text-xl font-light text-gray-900 group-hover:text-gray-600 transition-colors duration-300">Galerie</span>
               <p className="text-sm text-gray-500 mt-1 group-hover:text-gray-600 transition-colors duration-300">Collection d'œuvres 2023-2024</p>
-            </a>
+            </Link>
             
-            <a href="#" className="group block py-3 border-b border-gray-100 hover:border-gray-300 transition-all duration-300">
-              <span className="text-xl font-light text-gray-900 group-hover:text-gray-600 transition-colors duration-300">Expositions</span>
-              <p className="text-sm text-gray-500 mt-1 group-hover:text-gray-600 transition-colors duration-300">Événements et vernissages</p>
-            </a>
-            
-            <a href="#" className="group block py-3 border-b border-gray-100 hover:border-gray-300 transition-all duration-300">
+            <Link href="/videos" className="group block py-3 border-b border-gray-100 hover:border-gray-300 transition-all duration-300">
               <span className="text-xl font-light text-gray-900 group-hover:text-gray-600 transition-colors duration-300">Atelier</span>
               <p className="text-sm text-gray-500 mt-1 group-hover:text-gray-600 transition-colors duration-300">Visites et processus créatif</p>
-            </a>
+            </Link>
             
-            <a href="#" className="group block py-3 border-b border-gray-100 hover:border-gray-300 transition-all duration-300">
+            {/* <Link href="/contacts" className="group block py-3 border-b border-gray-100 hover:border-gray-300 transition-all duration-300">
               <span className="text-xl font-light text-gray-900 group-hover:text-gray-600 transition-colors duration-300">Acquisitions</span>
               <p className="text-sm text-gray-500 mt-1 group-hover:text-gray-600 transition-colors duration-300">Acheter une œuvre</p>
-            </a>
+            </Link> */}
             
-            <a href="#" className="group block py-3 border-b border-gray-100 hover:border-gray-300 transition-all duration-300">
+            <Link href="/contacts" className="group block py-3 border-b border-gray-100 hover:border-gray-300 transition-all duration-300">
               <span className="text-xl font-light text-gray-900 group-hover:text-gray-600 transition-colors duration-300">Contact</span>
               <p className="text-sm text-gray-500 mt-1 group-hover:text-gray-600 transition-colors duration-300">Prendre rendez-vous</p>
-            </a>
+            </Link>
           </nav>
 
           {/* Menu Footer */}

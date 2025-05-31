@@ -1,7 +1,7 @@
 'use client';
 
 import Menu from '@/components/Menu';
-import AccueilView from '../pages/AccueilView';
+import AccueilView from '@/components/AccueilView';
 export type Painting = {
   id: string;
   name: string;
