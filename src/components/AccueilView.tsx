@@ -1,3 +1,5 @@
+'use client'
+import Link from 'next/link';
 import React, { useState, useEffect } from 'react';
 
 export default function AccueilView() {
@@ -137,15 +139,14 @@ export default function AccueilView() {
           </h3>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-12">
-            <button className="group px-8 py-3 bg-gray-900 text-white font-light tracking-wide hover:bg-gray-800 transition-all duration-300 transform hover:scale-105 hover:shadow-lg relative overflow-hidden">
+            <Link href="/galerie" className="group px-8 py-3 bg-gray-900 text-white font-light tracking-wide hover:bg-gray-800 transition-all duration-300 transform hover:scale-105 hover:shadow-lg relative overflow-hidden">
               <span className="relative z-10">OSEZ EXPLORER</span>
-              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-20 transform -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
-            </button>
-            <button className="group px-8 py-3 border border-gray-900 text-gray-900 font-light tracking-wide hover:bg-gray-900 hover:text-white transition-all duration-300 transform hover:scale-105 relative overflow-hidden">
+            </Link>
+            {/* <button className="group px-8 py-3 border border-gray-900 text-gray-900 font-light tracking-wide hover:bg-gray-900 hover:text-white transition-all duration-300 transform hover:scale-105 relative overflow-hidden">
               <span className="relative z-10">OSEZ RESSENTIR</span>
               <div className="absolute inset-0 bg-gray-900 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
               <span className="absolute inset-0 flex items-center justify-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">OSEZ RESSENTIR</span>
-            </button>
+            </button> */}
           </div>
         </div>
 

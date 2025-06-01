@@ -1,4 +1,4 @@
-
+import ContactView from "@/components/ContactView";
 export default function Contact() {
-  return <h1>Contactez-moi</h1>;
+  return  <ContactView />;
 }

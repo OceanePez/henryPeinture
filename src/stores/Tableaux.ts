@@ -1,7 +1,6 @@
-// stores/Tableaux.ts
 import { create } from 'zustand';
 import { supabase } from '@/lib/supabaseClient';
-import { Painting } from '../models/Painting'; // ✅ préfère un fichier de modèle
+import { Painting } from '@/models/Painting';
 
 export interface TableauxState {
   tableaux: Painting[];
@@ -17,7 +16,7 @@ const tableauxStore = create<TableauxState>((set) => ({
 
   fetchTableaux: async () => {
     set({ loading: true, error: null });
-
+    console.log("Fetching paintings...");
     try {
       const { data, error } = await supabase
         .from('Paintings')

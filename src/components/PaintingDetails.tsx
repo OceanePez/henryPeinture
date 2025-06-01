@@ -1,5 +1,7 @@
+'use client';
+
+
 import { Painting } from '@/models/Painting'; 
-import { supabase } from '../lib/supabaseClient'
 
 type PaintingDetailsProps = {
   painting: Painting;

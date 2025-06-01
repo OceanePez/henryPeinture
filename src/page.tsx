@@ -40,9 +40,9 @@ export default function Home() {
         console.table(data)
 
         // Transform the data to match the Painting type
-        const transformedData: Painting[] = data.map(item => ({
+        const transformedData: Painting[] = data.map((item : Painting) => ({
           id: item.id,
-          name: item.name || 'Sans titre', // Use a default title if not available
+          name: item.name || '', 
           description: item.description,
           image_url: item.image_url, // Map the url field to image_url
           created_at: item.created_at,

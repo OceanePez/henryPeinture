@@ -39,51 +39,50 @@ export default function Menu (){
             
             <Link href="/galerie" className="group block py-3 border-b border-gray-100 hover:border-gray-300 transition-all duration-300">
               <span className="text-xl font-light text-gray-900 group-hover:text-gray-600 transition-colors duration-300">Galerie</span>
-              <p className="text-sm text-gray-500 mt-1 group-hover:text-gray-600 transition-colors duration-300">Collection d'œuvres 2023-2024</p>
+              <p className="text-sm text-gray-500 mt-1 group-hover:text-gray-600 transition-colors duration-300">Collection d'œuvres</p>
             </Link>
             
-            <Link href="/videos" className="group block py-3 border-b border-gray-100 hover:border-gray-300 transition-all duration-300">
+            {/* <Link href="/videos" className="group block py-3 border-b border-gray-100 hover:border-gray-300 transition-all duration-300">
               <span className="text-xl font-light text-gray-900 group-hover:text-gray-600 transition-colors duration-300">Atelier</span>
               <p className="text-sm text-gray-500 mt-1 group-hover:text-gray-600 transition-colors duration-300">Visites et processus créatif</p>
             </Link>
-            
+             */}
             {/* <Link href="/contacts" className="group block py-3 border-b border-gray-100 hover:border-gray-300 transition-all duration-300">
               <span className="text-xl font-light text-gray-900 group-hover:text-gray-600 transition-colors duration-300">Acquisitions</span>
               <p className="text-sm text-gray-500 mt-1 group-hover:text-gray-600 transition-colors duration-300">Acheter une œuvre</p>
             </Link> */}
             
-            <Link href="/contacts" className="group block py-3 border-b border-gray-100 hover:border-gray-300 transition-all duration-300">
+            {/* <Link href="/contacts" className="group block py-3 border-b border-gray-100 hover:border-gray-300 transition-all duration-300">
               <span className="text-xl font-light text-gray-900 group-hover:text-gray-600 transition-colors duration-300">Contact</span>
               <p className="text-sm text-gray-500 mt-1 group-hover:text-gray-600 transition-colors duration-300">Prendre rendez-vous</p>
-            </Link>
+            </Link> */}
           </nav>
 
           {/* Menu Footer */}
           <div className="mt-16 pt-8 border-t border-gray-200">
             <div className="space-y-4">
-              <div>
+              {/* <div>
                 <p className="text-sm font-medium text-gray-900">Atelier</p>
                 <p className="text-sm text-gray-600">12 Rue des Artistes<br />75018 Paris</p>
-              </div>
+              </div> */}
               <div>
                 <p className="text-sm font-medium text-gray-900">Contact</p>
-                <p className="text-sm text-gray-600">florence@henry-art.fr<br />+33 1 42 52 78 90</p>
+                <p className="text-sm text-gray-600">florence_labretonne@hotmail.fr<br />+33 6 52 19 24 29</p>
               </div>
             </div>
             
-            <div className="mt-8 flex space-x-4">
-              <a href="#" className="w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center hover:bg-gray-200 transition-colors duration-300">
+             <div className="mt-8 flex space-x-4">
+            {/*  <a href="#" className="w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center hover:bg-gray-200 transition-colors duration-300">
                 <span className="text-xs text-gray-600">IG</span>
-              </a>
-              <a href="#" className="w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center hover:bg-gray-200 transition-colors duration-300">
+              </a> */}
+              {/* <a href="#" className="w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center hover:bg-gray-200 transition-colors duration-300">
                 <span className="text-xs text-gray-600">FB</span>
-              </a>
+              </a> */}
             </div>
           </div>
         </div>
       </div>
-
-      </div>
+ </div>
     )
 
 }

@@ -1,0 +1,43 @@
+
+import type { NextApiRequest, NextApiResponse } from 'next';
+import nodemailer from 'nodemailer';
+
+type Data = {
+  message: string;
+};
+
+export async function handler(req: NextApiRequest, res: NextApiResponse<Data>) {
+  if (req.method !== 'POST') {
+    return res.status(405).json({ message: 'Méthode non autorisée' });
+  }
+
+  const { name, email, message } = req.body;
+
+  if (!name || !email || !message) {
+    return res.status(400).json({ message: 'Champs manquants' });
+  }
+
+  // Config SMTP Gmail (ou autre)
+  const transporter = nodemailer.createTransport({
+    service: 'hotmail',
+    auth: {
+      user: process.env.SMTP_USER, // Ton email hotmail
+      pass: process.env.SMTP_PASS, // Ton mot de passe ou token app hotmail
+    },
+  });
+
+  try {
+    await transporter.sendMail({
+      from: `"${name}" <${email}>`, // expéditeur = info du formulaire
+      to: process.env.SMTP_USER, // destinataire fixe (ton mail Hotmail par exemple)
+      subject: `Nouveau message de ${name} via le formulaire`,
+      text: message,
+      html: `<p>${message}</p><p>De : ${name} - ${email}</p>`,
+    });
+
+    res.status(200).json({ message: 'Email envoyé avec succès' });
+  } catch (error) {
+    console.error('Erreur envoi email:', error);
+    res.status(500).json({ message: 'Erreur serveur lors de l’envoi' });
+  }
+}
