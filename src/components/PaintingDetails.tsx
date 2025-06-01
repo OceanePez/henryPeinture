@@ -47,7 +47,7 @@ export default function PaintingDetails({ painting, onClose }: PaintingDetailsPr
             )}
             
             <div className="mb-4">
-              <h3 className="text-lg font-medium text-gray-900">Date d'ajout</h3>
+              <h3 className="text-lg font-medium text-gray-900">Date d1&#39;ajout</h3>
               <p className="text-gray-600">
                 {new Date(painting.created_at).toLocaleDateString('fr-FR', {
                   year: 'numeric',

@@ -34,7 +34,7 @@ export default function Menu (){
           <nav className="space-y-6">
             <Link href="/" className="group block py-3 border-b border-gray-100 hover:border-gray-300 transition-all duration-300">
               <span className="text-xl font-light text-gray-900 group-hover:text-gray-600 transition-colors duration-300">Présentation</span>
-              <p className="text-sm text-gray-500 mt-1 group-hover:text-gray-600 transition-colors duration-300">L'artiste et son univers</p>
+              <p className="text-sm text-gray-500 mt-1 group-hover:text-gray-600 transition-colors duration-300">L1&#39;artiste et son univers</p>
             </Link>
             
             <Link href="/galerie" className="group block py-3 border-b border-gray-100 hover:border-gray-300 transition-all duration-300">
