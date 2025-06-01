@@ -10,6 +10,9 @@ jobs:
   build:
     name: Lint, Build & Test
     runs-on: ubuntu-latest
+    env: # Injecte les secrets ici
+      NEXT_PUBLIC_SUPABASE_ANON_KEY: ${{ secrets.NEXT_PUBLIC_SUPABASE_ANON_KEY }}
+      NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.NEXT_PUBLIC_SUPABASE_URL_SECRET }}
 
     steps:
       - name: Checkout code
