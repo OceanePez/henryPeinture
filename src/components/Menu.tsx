@@ -55,7 +55,7 @@ export default function Menu() {
                 Présentation
               </span>
               <p className="text-sm text-gray-500 mt-1 group-hover:text-gray-600 transition-colors duration-300">
-                L1&#39;artiste et son univers
+                L'artiste et son univers
               </p>
             </Link>
 
@@ -67,7 +67,7 @@ export default function Menu() {
                 Galerie
               </span>
               <p className="text-sm text-gray-500 mt-1 group-hover:text-gray-600 transition-colors duration-300">
-                Collection d1&#39;œuvres
+                Collection d'œuvres
               </p>
             </Link>
 
