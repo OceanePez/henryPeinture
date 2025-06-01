@@ -119,7 +119,7 @@ export default function AccueilView() {
               éveiller.
             </p>
             <blockquote className="italic text-gray-600 pl-4 border-l-2 border-gray-300 mt-8 transform hover:scale-105 transition-transform duration-300">
-              "Son art est un langage. Une porte. Une présence."
+              &rdquoSon art est un langage. Une porte. Une présence.&rdquo
             </blockquote>
           </div>
 

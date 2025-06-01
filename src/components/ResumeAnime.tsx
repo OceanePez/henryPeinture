@@ -105,8 +105,8 @@ export default function ResumeAnime() {
             </h2>
             <p className="text-gray-700 leading-relaxed hover:text-gray-900 transition-colors duration-300">
               Formée par la vie, guidée par l1&#39;intuition et nourrie
-              d1&#39;une passion pour l'âme humaine, Florence peint comme on
-              murmure à l1&#39;inconscient. Ses toiles vibrent d1&#39;une
+              d1&#39;une passion pour l1&#39;âme humaine, Florence peint comme
+              on murmure à l1&#39;inconscient. Ses toiles vibrent d1&#39;une
               énergie singulière : un entrelacs de symboles, de textures dorées,
               de figures oniriques et de paysages intérieurs.
             </p>
@@ -174,7 +174,7 @@ export default function ResumeAnime() {
             </p>
             <p className="text-gray-700 leading-relaxed text-center hover:text-gray-900 transition-colors duration-300">
               Chaque peinture devient un point d1&#39;ancrage, un compagnon
-              silencieux qui veille et murmure à l'âme. Que ce soit pour un
+              silencieux qui veille et murmure à l1&#39;âme. Que ce soit pour un
               intérieur personnel, un espace thérapeutique ou une collection
               d1&#39;art singulière, les toiles de Florence sont des présences
               rares, précieuses et vivantes.
