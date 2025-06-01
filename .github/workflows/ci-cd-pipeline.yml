@@ -15,6 +15,10 @@ jobs:
       NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.NEXT_PUBLIC_SUPABASE_URL_SECRET }}
 
     steps:
+      - name: Create .env file
+        run: |
+          echo "NEXT_PUBLIC_SUPABASE_ANON_KEY=${NEXT_PUBLIC_SUPABASE_ANON_KEY}" >> .env
+          echo "NEXT_PUBLIC_SUPABASE_URL=${NEXT_PUBLIC_SUPABASE_URL_SECRET}" >> .env
       - name: Checkout code
         uses: actions/checkout@v3
 
