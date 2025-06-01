@@ -7,7 +7,7 @@ import tableauxStore from '@/stores/Tableaux';
 import TableauCard from './TableauCard';
 
 export default function GalerieView() {
-  const [selectedPainting, setSelectedPainting] = useState<Painting | null>(null);
+  const [, setSelectedPainting] = useState<Painting | null>(null);
   const { tableaux, fetchTableaux, loading } = tableauxStore();
 
   useEffect(() => {
