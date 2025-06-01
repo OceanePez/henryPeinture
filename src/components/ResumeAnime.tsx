@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 
 export default function ResumeAnime() {
   const [isVisible, setIsVisible] = useState(false);
@@ -104,11 +104,11 @@ export default function ResumeAnime() {
               <div className="absolute -bottom-px left-0 w-0 h-px bg-gray-900 animate-expand-line"></div>
             </h2>
             <p className="text-gray-700 leading-relaxed hover:text-gray-900 transition-colors duration-300">
-              Formée par la vie, guidée par l1&#39;intuition et nourrie d1&#39;une passion
-              pour l'âme humaine, Florence peint comme on murmure à
-              l1&#39;inconscient. Ses toiles vibrent d1&#39;une énergie singulière : un
-              entrelacs de symboles, de textures dorées, de figures oniriques et
-              de paysages intérieurs.
+              Formée par la vie, guidée par l1&#39;intuition et nourrie
+              d1&#39;une passion pour l'âme humaine, Florence peint comme on
+              murmure à l1&#39;inconscient. Ses toiles vibrent d1&#39;une
+              énergie singulière : un entrelacs de symboles, de textures dorées,
+              de figures oniriques et de paysages intérieurs.
             </p>
             <p className="text-gray-700 leading-relaxed hover:text-gray-900 transition-colors duration-300">
               Chaque détail semble respirer. Ses créations ne se regardent pas :
@@ -117,7 +117,7 @@ export default function ResumeAnime() {
               éveiller.
             </p>
             <blockquote className="italic text-gray-600 pl-4 border-l-2 border-gray-300 mt-8 transform hover:scale-105 transition-transform duration-300">
-              "Son art est un langage. Une porte. Une présence."
+              &rdquoSon art est un langage. Une porte. Une présence.&rdquo
             </blockquote>
           </div>
 
@@ -137,16 +137,16 @@ export default function ResumeAnime() {
             </h2>
             <p className="text-gray-700 leading-relaxed hover:text-gray-900 transition-colors duration-300">
               Le style de Florence Henry est unique, inclassable. Il mêle la
-              douceur d1&#39;un rêve à la profondeur d1&#39;un cri intérieur. Ses œuvres
-              oscillent entre abstraction intuitive et figuration poétique,
-              comme si chaque toile portait en elle un secret prêt à être
-              découvert par celui qui sait regarder.
+              douceur d1&#39;un rêve à la profondeur d1&#39;un cri intérieur.
+              Ses œuvres oscillent entre abstraction intuitive et figuration
+              poétique, comme si chaque toile portait en elle un secret prêt à
+              être découvert par celui qui sait regarder.
             </p>
             <p className="text-gray-700 leading-relaxed hover:text-gray-900 transition-colors duration-300">
               Les formes, les couleurs et les textures créent une harmonie
               vibrante qui touche directement le cœur, sans passer par le
-              mental. C1&#39;est un art sensoriel, presque spirituel, qui résonne
-              avec notre inconscient collectif.
+              mental. C1&#39;est un art sensoriel, presque spirituel, qui
+              résonne avec notre inconscient collectif.
             </p>
           </div>
         </div>
@@ -166,17 +166,18 @@ export default function ResumeAnime() {
           </h2>
           <div className="max-w-3xl mx-auto relative z-10">
             <p className="text-gray-700 leading-relaxed mb-6 text-center hover:text-gray-900 transition-colors duration-300">
-              Acquérir une toile de Florence, c1&#39;est bien plus qu1&#39;acheter une
-              œuvre : c1&#39;est inviter une énergie puissante chez soi. Ses tableaux
-              ne se contentent pas d1&#39;embellir un lieu, ils le transforment. Ils
-              apaisent, inspirent, élèvent.
+              Acquérir une toile de Florence, c1&#39;est bien plus
+              qu1&#39;acheter une œuvre : c1&#39;est inviter une énergie
+              puissante chez soi. Ses tableaux ne se contentent pas
+              d1&#39;embellir un lieu, ils le transforment. Ils apaisent,
+              inspirent, élèvent.
             </p>
             <p className="text-gray-700 leading-relaxed text-center hover:text-gray-900 transition-colors duration-300">
               Chaque peinture devient un point d1&#39;ancrage, un compagnon
               silencieux qui veille et murmure à l'âme. Que ce soit pour un
               intérieur personnel, un espace thérapeutique ou une collection
-              d1&#39;art singulière, les toiles de Florence sont des présences rares,
-              précieuses et vivantes.
+              d1&#39;art singulière, les toiles de Florence sont des présences
+              rares, précieuses et vivantes.
             </p>
           </div>
         </div>
@@ -190,7 +191,8 @@ export default function ResumeAnime() {
           }`}
         >
           <h3 className="text-3xl font-light text-gray-900 italic animate-float">
-            "Vous ne regarderez plus jamais une peinture de la même manière."
+            &rdquoVous ne regarderez plus jamais une peinture de la même
+            manière.&rdquo
           </h3>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-12">
