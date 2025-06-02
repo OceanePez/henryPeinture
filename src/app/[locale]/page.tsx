@@ -1,7 +1,6 @@
 import AccueilView from "@/components/AccueilView";
 import Menu from "@/components/Menu";
 
-
 // async function testFetch() {
 //   const { data, error } = await supabase.from('Paintings').select('*');
 //   console.log('Test fetch data:', data);
@@ -13,8 +12,7 @@ import Menu from "@/components/Menu";
 export default function Home() {
   return (
     <>
-      <Menu />
-      <main >
+      <main>
         <AccueilView />
       </main>
     </>
