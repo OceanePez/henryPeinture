@@ -1,8 +1,11 @@
 "use client";
+import { useTranslations } from "next-intl";
 import Link from "next/link";
 import React, { useState, useEffect } from "react";
 
 export default function AccueilView() {
+  const t = useTranslations("accueil");
+
   const [isVisible, setIsVisible] = useState(false);
   const [textAnimation, setTextAnimation] = useState(false);
 
@@ -106,11 +109,11 @@ export default function AccueilView() {
               <div className="absolute -bottom-px left-0 w-0 h-px bg-gray-900 animate-expand-line"></div>
             </h2>
             <p className="text-gray-700 leading-relaxed hover:text-gray-900 transition-colors duration-300">
-              Formée par la vie, guidée par l'intuition et nourrie
-              d'une passion pour l'âme humaine, Florence peint comme
-              on murmure à l'inconscient. Ses toiles vibrent d'une
-              énergie singulière : un entrelacs de symboles, de textures dorées,
-              de figures oniriques et de paysages intérieurs.
+              Formée par la vie, guidée par l'intuition et nourrie d'une passion
+              pour l'âme humaine, Florence peint comme on murmure à
+              l'inconscient. Ses toiles vibrent d'une énergie singulière : un
+              entrelacs de symboles, de textures dorées, de figures oniriques et
+              de paysages intérieurs.
             </p>
             <p className="text-gray-700 leading-relaxed hover:text-gray-900 transition-colors duration-300">
               Chaque détail semble respirer. Ses créations ne se regardent pas :
@@ -139,16 +142,16 @@ export default function AccueilView() {
             </h2>
             <p className="text-gray-700 leading-relaxed hover:text-gray-900 transition-colors duration-300">
               Le style de Florence Henry est unique, inclassable. Il mêle la
-              douceur d'un rêve à la profondeur d'un cri intérieur.
-              Ses œuvres oscillent entre abstraction intuitive et figuration
-              poétique, comme si chaque toile portait en elle un secret prêt à
-              être découvert par celui qui sait regarder.
+              douceur d'un rêve à la profondeur d'un cri intérieur. Ses œuvres
+              oscillent entre abstraction intuitive et figuration poétique,
+              comme si chaque toile portait en elle un secret prêt à être
+              découvert par celui qui sait regarder.
             </p>
             <p className="text-gray-700 leading-relaxed hover:text-gray-900 transition-colors duration-300">
               Les formes, les couleurs et les textures créent une harmonie
               vibrante qui touche directement le cœur, sans passer par le
-              mental. C'est un art sensoriel, presque spirituel, qui
-              résonne avec notre inconscient collectif.
+              mental. C'est un art sensoriel, presque spirituel, qui résonne
+              avec notre inconscient collectif.
             </p>
           </div>
         </div>
@@ -168,18 +171,17 @@ export default function AccueilView() {
           </h2>
           <div className="max-w-3xl mx-auto relative z-10">
             <p className="text-gray-700 leading-relaxed mb-6 text-center hover:text-gray-900 transition-colors duration-300">
-              Acquérir une toile de Florence, c'est bien plus
-              qu'acheter une œuvre : c'est inviter une énergie
-              puissante chez soi. Ses tableaux ne se contentent pas
-              d'embellir un lieu, ils le transforment. Ils apaisent,
-              inspirent, élèvent.
+              Acquérir une toile de Florence, c'est bien plus qu'acheter une
+              œuvre : c'est inviter une énergie puissante chez soi. Ses tableaux
+              ne se contentent pas d'embellir un lieu, ils le transforment. Ils
+              apaisent, inspirent, élèvent.
             </p>
             <p className="text-gray-700 leading-relaxed text-center hover:text-gray-900 transition-colors duration-300">
               Chaque peinture devient un point d'ancrage, un compagnon
               silencieux qui veille et murmure à l’âme. Que ce soit pour un
               intérieur personnel, un espace thérapeutique ou une collection
-              d'art singulière, les toiles de Florence sont des présences
-              rares, précieuses et vivantes.
+              d'art singulière, les toiles de Florence sont des présences rares,
+              précieuses et vivantes.
             </p>
           </div>
         </div>
@@ -193,8 +195,9 @@ export default function AccueilView() {
           }`}
         >
           <h3 className="text-3xl font-light text-gray-900 italic animate-float">
-            <p>"Vous ne regarderez plus jamais une peinture de la même
-            manière."</p>
+            <p>
+              "Vous ne regarderez plus jamais une peinture de la même manière."
+            </p>
           </h3>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-12">

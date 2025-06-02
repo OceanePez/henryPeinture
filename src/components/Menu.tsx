@@ -1,7 +1,11 @@
 "use client";
+import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { useState } from "react";
+
 export default function Menu() {
+  const t = useTranslations("menu");
+
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
     <div className=" bg-white overflow-hidden">
@@ -39,9 +43,9 @@ export default function Menu() {
           {/* Menu Header */}
           <div className="mb-12 pt-16">
             <h2 className="text-3xl font-light text-gray-900 mb-2">
-              Florence Henry
+              {t("auteur")}
             </h2>
-            <p className="text-gray-600 italic">Navigation</p>
+            <p className="text-gray-600 italic"> {t("navigation")}</p>
             <div className="w-16 h-px bg-gray-400 mt-4"></div>
           </div>
 
@@ -52,10 +56,10 @@ export default function Menu() {
               className="group block py-3 border-b border-gray-100 hover:border-gray-300 transition-all duration-300"
             >
               <span className="text-xl font-light text-gray-900 group-hover:text-gray-600 transition-colors duration-300">
-                Présentation
+                {t("accueil.titre")}
               </span>
               <p className="text-sm text-gray-500 mt-1 group-hover:text-gray-600 transition-colors duration-300">
-                L'artiste et son univers
+                {t("accueil.description")}
               </p>
             </Link>
 
@@ -64,10 +68,10 @@ export default function Menu() {
               className="group block py-3 border-b border-gray-100 hover:border-gray-300 transition-all duration-300"
             >
               <span className="text-xl font-light text-gray-900 group-hover:text-gray-600 transition-colors duration-300">
-                Galerie
+                {t("galerie.titre")}
               </span>
               <p className="text-sm text-gray-500 mt-1 group-hover:text-gray-600 transition-colors duration-300">
-                Collection d'œuvres
+                {t("galerie.description")}
               </p>
             </Link>
 
@@ -95,7 +99,10 @@ export default function Menu() {
                 <p className="text-sm text-gray-600">12 Rue des Artistes<br />75018 Paris</p>
               </div> */}
               <div>
-                <p className="text-sm font-medium text-gray-900">Contact</p>
+                <p className="text-sm font-medium text-gray-900">
+                  {" "}
+                  {t("contacts.titre")}
+                </p>
                 <p className="text-sm text-gray-600">
                   florence_labretonne@hotmail.fr
                   <br />
