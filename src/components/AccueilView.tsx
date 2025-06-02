@@ -45,9 +45,9 @@ export default function AccueilView() {
               }`}
             >
               <h1 className="text-6xl md:text-8xl font-light text-gray-900 tracking-wide leading-none">
-                Florence
+                {t("firstName")}
                 <br />
-                <span className="text-gray-600">Henry</span>
+                <span className="text-gray-600"> {t("lastName")}</span>
               </h1>
             </div>
 
@@ -61,9 +61,8 @@ export default function AccueilView() {
             >
               <div className="md:text-right">
                 <p className="text-2xl md:text-3xl text-gray-700 font-light italic tracking-wide leading-relaxed">
-                  L'Art de l'Invisible,
+                  {t("subtitle")}
                   <br />
-                  la Peinture aux Âmes
                 </p>
                 <div className="w-24 h-px bg-gray-400 mt-6 md:ml-auto animate-pulse"></div>
               </div>
@@ -84,13 +83,12 @@ export default function AccueilView() {
         >
           <div className="max-w-3xl mx-auto">
             <p className="text-lg text-gray-800 leading-relaxed mb-8 animate-fade-in">
-              Entrez dans l'univers énigmatique de Florence Henry, artiste
-              visionnaire surnommée
+              {t("intro")}
               <em className="italic font-medium text-gray-900">
                 {" "}
-                la peintre aux bulles
+                {t("intro-2")}
               </em>
-              , dont chaque œuvre révèle un monde caché au-delà du visible.
+              {t("intro-3")}
             </p>
           </div>
         </div>
@@ -105,24 +103,17 @@ export default function AccueilView() {
             }`}
           >
             <h2 className="text-2xl font-light text-gray-900 mb-6 pb-2 border-b border-gray-200 relative">
-              L'Artiste
+              {t("artist.title")}
               <div className="absolute -bottom-px left-0 w-0 h-px bg-gray-900 animate-expand-line"></div>
             </h2>
             <p className="text-gray-700 leading-relaxed hover:text-gray-900 transition-colors duration-300">
-              Formée par la vie, guidée par l'intuition et nourrie d'une passion
-              pour l'âme humaine, Florence peint comme on murmure à
-              l'inconscient. Ses toiles vibrent d'une énergie singulière : un
-              entrelacs de symboles, de textures dorées, de figures oniriques et
-              de paysages intérieurs.
+              {t("artist.para1")}
             </p>
             <p className="text-gray-700 leading-relaxed hover:text-gray-900 transition-colors duration-300">
-              Chaque détail semble respirer. Ses créations ne se regardent pas :
-              elles se ressentent, elles parlent, elles guident. Florence ne
-              peint pas pour décorer. Elle peint pour révéler. Pour guérir. Pour
-              éveiller.
+              {t("artist.para2")}
             </p>
             <blockquote className="italic text-gray-600 pl-4 border-l-2 border-gray-300 mt-8 transform hover:scale-105 transition-transform duration-300">
-              <p>"Son art est un langage. Une porte. Une présence."</p>
+              <p>{t("artist.quote")}</p>
             </blockquote>
           </div>
 
@@ -134,24 +125,17 @@ export default function AccueilView() {
             }`}
           >
             <h2 className="text-2xl font-light text-gray-900 mb-6 pb-2 border-b border-gray-200 relative">
-              Le Style
+              {t("style.title")}
               <div
                 className="absolute -bottom-px left-0 w-0 h-px bg-gray-900 animate-expand-line"
                 style={{ animationDelay: "0.2s" }}
               ></div>
             </h2>
             <p className="text-gray-700 leading-relaxed hover:text-gray-900 transition-colors duration-300">
-              Le style de Florence Henry est unique, inclassable. Il mêle la
-              douceur d'un rêve à la profondeur d'un cri intérieur. Ses œuvres
-              oscillent entre abstraction intuitive et figuration poétique,
-              comme si chaque toile portait en elle un secret prêt à être
-              découvert par celui qui sait regarder.
+              {t("style.para1")}
             </p>
             <p className="text-gray-700 leading-relaxed hover:text-gray-900 transition-colors duration-300">
-              Les formes, les couleurs et les textures créent une harmonie
-              vibrante qui touche directement le cœur, sans passer par le
-              mental. C'est un art sensoriel, presque spirituel, qui résonne
-              avec notre inconscient collectif.
+              {t("style.para2")}
             </p>
           </div>
         </div>
@@ -166,22 +150,15 @@ export default function AccueilView() {
         >
           <div className="absolute inset-0 bg-gradient-to-r from-transparent via-gray-100 to-transparent opacity-50 transform translate-x-full animate-shimmer"></div>
           <h2 className="text-2xl font-light text-gray-900 mb-8 text-center pb-2 relative">
-            Acquérir une Œuvre
+            {t("acquire.title")}
             <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-0 h-px bg-gray-900 animate-expand-center"></div>
           </h2>
           <div className="max-w-3xl mx-auto relative z-10">
             <p className="text-gray-700 leading-relaxed mb-6 text-center hover:text-gray-900 transition-colors duration-300">
-              Acquérir une toile de Florence, c'est bien plus qu'acheter une
-              œuvre : c'est inviter une énergie puissante chez soi. Ses tableaux
-              ne se contentent pas d'embellir un lieu, ils le transforment. Ils
-              apaisent, inspirent, élèvent.
+              {t("acquire.para1")}
             </p>
             <p className="text-gray-700 leading-relaxed text-center hover:text-gray-900 transition-colors duration-300">
-              Chaque peinture devient un point d'ancrage, un compagnon
-              silencieux qui veille et murmure à l’âme. Que ce soit pour un
-              intérieur personnel, un espace thérapeutique ou une collection
-              d'art singulière, les toiles de Florence sont des présences rares,
-              précieuses et vivantes.
+              {t("acquire.para2")}
             </p>
           </div>
         </div>
@@ -195,9 +172,7 @@ export default function AccueilView() {
           }`}
         >
           <h3 className="text-3xl font-light text-gray-900 italic animate-float">
-            <p>
-              "Vous ne regarderez plus jamais une peinture de la même manière."
-            </p>
+            <p>{t("finalQuote")}</p>
           </h3>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-12">
@@ -205,7 +180,7 @@ export default function AccueilView() {
               href="/galerie"
               className="group px-8 py-3 bg-gray-900 text-white font-light tracking-wide hover:bg-gray-800 transition-all duration-300 transform hover:scale-105 hover:shadow-lg relative overflow-hidden"
             >
-              <span className="relative z-10">OSEZ EXPLORER</span>
+              <span className="relative z-10">{t("cta")}</span>
             </Link>
             {/* <button className="group px-8 py-3 border border-gray-900 text-gray-900 font-light tracking-wide hover:bg-gray-900 hover:text-white transition-all duration-300 transform hover:scale-105 relative overflow-hidden">
               <span className="relative z-10">OSEZ RESSENTIR</span>
@@ -224,7 +199,7 @@ export default function AccueilView() {
           }`}
         >
           <p className="text-2xl font-light text-gray-800 italic animate-pulse">
-            Osez l'art vivant de Florence Henry
+            {t("conclusion")}
           </p>
         </div>
       </div>
