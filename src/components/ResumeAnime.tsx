@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-
 export default function ResumeAnime() {
   const [isVisible, setIsVisible] = useState(false);
   const [textAnimation, setTextAnimation] = useState(false);

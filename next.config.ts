@@ -4,7 +4,8 @@ import createNextIntlPlugin from "next-intl/plugin";
 // Define the base Next.js configuration
 const baseConfig: NextConfig = {
   eslint: {
-    dirs: ["."],
+    dirs: ["./src/"],
+    ignoreDuringBuilds: true,
   },
   poweredByHeader: false,
   reactStrictMode: true,

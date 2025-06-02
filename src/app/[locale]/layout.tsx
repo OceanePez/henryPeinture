@@ -3,6 +3,7 @@ import "./globals.css";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
+import Menu from "@/components/Menu";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -28,7 +29,10 @@ export default async function RootLayout({
   return (
     <html lang={locale}>
       <body>
-        <NextIntlClientProvider>{children}</NextIntlClientProvider>
+        <NextIntlClientProvider>
+          <Menu></Menu>
+          {children}
+        </NextIntlClientProvider>
       </body>
     </html>
   );
