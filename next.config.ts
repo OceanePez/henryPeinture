@@ -10,7 +10,7 @@ const baseConfig: NextConfig = {
   reactStrictMode: true,
 };
 
-let configWithPlugins = createNextIntlPlugin("./src/i18n/request.ts")(
+const configWithPlugins = createNextIntlPlugin("./src/i18n/request.ts")(
   baseConfig
 );
 
