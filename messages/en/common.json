@@ -1,47 +1,52 @@
 {
-  "accueil": {
+  "home": {
     "firstName": "Florence Sonia",
     "lastName": "Henry",
-    "subtitle": "L’Art de l’Invisible,\nla Peinture aux Âmes",
-    "intro": "Entrez dans l’univers énigmatique de Florence Henry, artiste visionnaire surnommée la peintre aux bulles, dont chaque œuvre révèle un monde caché au-delà du visible.",
+    "subtitle": "The Art of the Invisible,\nPainting for the Soul",
+    "intro": "Step into the enigmatic world of Florence Henry, a visionary artist known as",
+    "intro-2": "the bubble painter",
+    "intro-3": "the bubble painter, whose every work unveils a hidden world beyond the visible.",
     "artist": {
-      "title": "L’Artiste",
-      "para1": "Formée par la vie, guidée par l’intuition et nourrie d’une passion pour l’âme humaine, Florence peint comme on murmure à l’inconscient. Ses toiles vibrent d’une énergie singulière : un entrelacs de symboles, de textures dorées, de figures oniriques et de paysages intérieurs.",
-      "para2": "Chaque détail semble respirer. Ses créations ne se regardent pas : elles se ressentent, elles parlent, elles guident. Florence ne peint pas pour décorer. Elle peint pour révéler. Pour guérir. Pour éveiller.",
-      "quote": "Son art est un langage. Une porte. Une présence."
+      "title": "The Artist",
+      "para1": "Trained by life, guided by intuition, and nourished by a passion for the human soul, Florence paints like one whispers to the unconscious. Her canvases vibrate with a singular energy: an interweaving of symbols, golden textures, dreamlike figures, and inner landscapes.",
+      "para2": "Every detail seems to breathe. Her creations are not just to be viewed: they are to be felt, they speak, they guide. Florence does not paint to decorate. She paints to reveal. To heal. To awaken.",
+      "quote": "Her art is a language. A doorway. A presence."
     },
     "style": {
-      "title": "Le Style",
-      "para1": "Le style de Florence Henry est unique, inclassable. Il mêle la douceur d’un rêve à la profondeur d’un cri intérieur. Ses œuvres oscillent entre abstraction intuitive et figuration poétique, comme si chaque toile portait en elle un secret prêt à être découvert par celui qui sait regarder.",
-      "para2": "Les formes, les couleurs et les textures créent une harmonie vibrante qui touche directement le cœur, sans passer par le mental. C’est un art sensoriel, presque spirituel, qui résonne avec notre inconscient collectif."
+      "title": "The Style",
+      "para1": "Florence Henry’s style is unique and unclassifiable. It blends the softness of a dream with the depth of an inner cry. Her works oscillate between intuitive abstraction and poetic figuration, as if each canvas holds a secret waiting to be discovered by those who know how to truly see.",
+      "para2": "The forms, colors, and textures create a vibrant harmony that touches the heart directly, bypassing the mind. It is a sensory, almost spiritual art that resonates with our collective unconscious."
     },
     "acquire": {
-      "title": "Acquérir une Œuvre",
-      "para1": "Acquérir une toile de Florence, c’est bien plus qu’acheter une œuvre : c’est inviter une énergie puissante chez soi. Ses tableaux ne se contentent pas d’embellir un lieu, ils le transforment. Ils apaisent, inspirent, élèvent.",
-      "para2": "Chaque peinture devient un point d’ancrage, un compagnon silencieux qui veille et murmure à l’âme. Que ce soit pour un intérieur personnel, un espace thérapeutique ou une collection d’art singulière, les toiles de Florence sont des présences rares, précieuses et vivantes."
+      "title": "Acquire a Work",
+      "para1": "Acquiring a painting by Florence is much more than buying a piece of art: it is inviting a powerful energy into your space. Her paintings do more than beautify a place — they transform it. They soothe, inspire, elevate.",
+      "para2": "Each painting becomes an anchor point, a silent companion that watches over and whispers to the soul. Whether for a personal interior, a therapeutic space, or a unique art collection, Florence’s works are rare, precious, and living presences."
     },
-    "finalQuote": "Vous ne regarderez plus jamais une peinture de la même manière.",
-    "cta": "OSEZ EXPLORER",
-    "conclusion": "Osez l’art vivant de Florence Henry"
+    "finalQuote": "You will never look at a painting the same way again.",
+    "cta": "DARE TO EXPLORE",
+    "conclusion": "Dare to embrace the living art of Florence Henry"
   },
   "menu": {
     "navigation": "Navigation",
     "auteur": "Florence Sonia Henry",
-    "accueil": {
-      "titre": "Présentation",
-      "description": "L’artiste et son univers"
+    "home": {
+      "title": "Introduction",
+      "description": "The artist and her world"
     },
-    "galerie": {
-      "titre": "Galerie",
-      "description": "Collection d'œuvres"
+    "gallery": {
+      "title": "Gallery",
+      "description": "Collection of works"
+    },
+    "contacts": {
+      "title": "Contacts"
     }
   },
-  "galerie": {
-    "titre": "Galerie de Peintures",
-    "chargement": "Chargement des peintures...",
-    "rien": "Aucune peinture trouvée."
+  "gallery": {
+    "title": "Painting Gallery",
+    "loading": "Loading paintings...",
+    "none": "No paintings found."
   },
   "contacts": {
-    "titre": "Contacts"
+    "title": "Contacts"
   }
 }
