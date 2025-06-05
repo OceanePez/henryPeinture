@@ -1,52 +1,52 @@
 {
-  "home": {
+  "accueil": {
     "firstName": "Florence Sonia",
     "lastName": "Henry",
     "subtitle": "The Art of the Invisible,\nPainting for the Soul",
     "intro": "Step into the enigmatic world of Florence Henry, a visionary artist known as",
-    "intro-2": "the bubble painter",
-    "intro-3": "the bubble painter, whose every work unveils a hidden world beyond the visible.",
+    "intro-2": "the painter of bubbles",
+    "intro-3": "whose every work reveals a hidden world beyond the visible.",
     "artist": {
       "title": "The Artist",
-      "para1": "Trained by life, guided by intuition, and nourished by a passion for the human soul, Florence paints like one whispers to the unconscious. Her canvases vibrate with a singular energy: an interweaving of symbols, golden textures, dreamlike figures, and inner landscapes.",
-      "para2": "Every detail seems to breathe. Her creations are not just to be viewed: they are to be felt, they speak, they guide. Florence does not paint to decorate. She paints to reveal. To heal. To awaken.",
+      "para1": "Trained by life, guided by intuition, and fueled by a passion for the human soul, Florence paints as one whispers to the unconscious. Her canvases vibrate with a unique energy: an interweaving of symbols, golden textures, dreamlike figures, and inner landscapes.",
+      "para2": "Every detail seems to breathe. Her creations are not simply viewed: they are felt, they speak, they guide. Florence doesn’t paint to decorate. She paints to reveal. To heal. To awaken.",
       "quote": "Her art is a language. A doorway. A presence."
     },
     "style": {
       "title": "The Style",
-      "para1": "Florence Henry’s style is unique and unclassifiable. It blends the softness of a dream with the depth of an inner cry. Her works oscillate between intuitive abstraction and poetic figuration, as if each canvas holds a secret waiting to be discovered by those who know how to truly see.",
-      "para2": "The forms, colors, and textures create a vibrant harmony that touches the heart directly, bypassing the mind. It is a sensory, almost spiritual art that resonates with our collective unconscious."
+      "para1": "Florence Henry’s style is unique and unclassifiable. It blends the softness of a dream with the depth of an inner cry. Her works oscillate between intuitive abstraction and poetic figuration, as if each canvas held a secret ready to be uncovered by those who truly see.",
+      "para2": "Shapes, colors, and textures create a vibrant harmony that touches the heart directly, bypassing the mind. It is a sensory, almost spiritual art that resonates with our collective unconscious."
     },
     "acquire": {
       "title": "Acquire a Work",
-      "para1": "Acquiring a painting by Florence is much more than buying a piece of art: it is inviting a powerful energy into your space. Her paintings do more than beautify a place — they transform it. They soothe, inspire, elevate.",
-      "para2": "Each painting becomes an anchor point, a silent companion that watches over and whispers to the soul. Whether for a personal interior, a therapeutic space, or a unique art collection, Florence’s works are rare, precious, and living presences."
+      "para1": "Acquiring one of Florence’s paintings is far more than buying a piece of art: it is inviting a powerful energy into your space. Her artworks do more than embellish — they transform. They soothe, inspire, and elevate.",
+      "para2": "Each painting becomes an anchor, a silent companion that watches over and whispers to the soul. Whether for a personal interior, a therapeutic space, or a distinctive art collection, Florence’s works are rare, precious, and living presences."
     },
     "finalQuote": "You will never look at a painting the same way again.",
     "cta": "DARE TO EXPLORE",
-    "conclusion": "Dare to embrace the living art of Florence Henry"
+    "conclusion": "Dare to experience the living art of Florence Henry"
   },
   "menu": {
     "navigation": "Navigation",
     "auteur": "Florence Sonia Henry",
-    "home": {
-      "title": "Introduction",
+    "accueil": {
+      "titre": "Overview",
       "description": "The artist and her world"
     },
-    "gallery": {
-      "title": "Gallery",
-      "description": "Collection of works"
+    "galerie": {
+      "titre": "Gallery",
+      "description": "Art collection"
     },
     "contacts": {
-      "title": "Contacts"
+      "titre": "Contact"
     }
   },
-  "gallery": {
-    "title": "Painting Gallery",
-    "loading": "Loading paintings...",
-    "none": "No paintings found."
+  "galerie": {
+    "titre": "Painting Gallery",
+    "chargement": "Loading paintings...",
+    "rien": "No paintings found."
   },
   "contacts": {
-    "title": "Contacts"
+    "titre": "Contacts"
   }
 }
