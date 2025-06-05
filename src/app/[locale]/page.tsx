@@ -1,5 +1,4 @@
 import AccueilView from "@/components/AccueilView";
-import Menu from "@/components/Menu";
 
 // async function testFetch() {
 //   const { data, error } = await supabase.from('Paintings').select('*');
