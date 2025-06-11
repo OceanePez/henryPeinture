@@ -8,6 +8,19 @@ import Menu from "@/components/Menu";
 export const metadata: Metadata = {
   title: "Florence Sonia Henry",
   description: "Peinture des rêves",
+  // category: "",
+  // robots: "",
+  // generator: "Next.js",
+  // publisher: "Art",
+  // keywords: [
+  //   "Florence Henry",
+  //   "intuitive art",
+  //   "symbolic painting",
+  //   "spiritual art",
+  //   "visionary artist",
+  //   "art therapy",
+  //   "contemporary painting",
+  // ],
 };
 
 export function generateStaticParams() {
