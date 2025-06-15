@@ -94,7 +94,7 @@ export default function AccueilView() {
           </div>
           <div className="1/3">
             <img
-              src="attachments/regard.jpg"
+              src="/attachments/regard.jpg"
               alt="Description"
               className="w-full h-auto rounded-lg shadow-md"
             />
@@ -119,7 +119,7 @@ export default function AccueilView() {
             </p>
             <div className="1/3">
               <img
-                src="attachments/tab.jpg"
+                src="/attachments/tab.jpg"
                 alt="Description"
                 className="w-full h-auto rounded-lg shadow-md"
               />
@@ -152,7 +152,7 @@ export default function AccueilView() {
 
             <div className="1/3">
               <img
-                src="attachments/tab2.jpg"
+                src="/attachments/tab2.jpg"
                 alt="Description"
                 className="w-full h-auto rounded-lg shadow-md"
               />
@@ -179,7 +179,7 @@ export default function AccueilView() {
           <div className="flex flex-row items-center justify-center gap-8">
             <div className="1/3">
               <img
-                src="attachments/1000807723.jpg"
+                src="/attachments/1000807723.jpg"
                 alt="Description"
                 className="w-full h-auto rounded-lg shadow-md"
               />
