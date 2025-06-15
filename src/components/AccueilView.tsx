@@ -119,7 +119,7 @@ export default function AccueilView() {
             </p>
             <div className="1/3">
               <img
-                src="/attachments/tab.jpg"
+                src="/attachments/maman1.jpg"
                 alt="Description"
                 className="w-full h-auto rounded-lg shadow-md"
               />
@@ -152,7 +152,7 @@ export default function AccueilView() {
 
             <div className="1/3">
               <img
-                src="/attachments/tab2.jpg"
+                src="/attachments/maman3.jpg"
                 alt="Description"
                 className="w-full h-auto rounded-lg shadow-md"
               />
