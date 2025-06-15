@@ -153,13 +153,22 @@ export default function AccueilView() {
             {t("acquire.title")}
             <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-0 h-px bg-gray-900 animate-expand-center"></div>
           </h2>
-          <div className="max-w-3xl mx-auto relative z-10">
-            <p className="text-gray-700 leading-relaxed mb-6 text-center hover:text-gray-900 transition-colors duration-300">
-              {t("acquire.para1")}
-            </p>
-            <p className="text-gray-700 leading-relaxed text-center hover:text-gray-900 transition-colors duration-300">
-              {t("acquire.para2")}
-            </p>
+          <div className="flex flex-row items-center justify-center gap-8">
+            <div className="1/3">
+              <img
+                src="attachments/1000807723.jpg"
+                alt="Description"
+                className="w-full h-auto rounded-lg shadow-md"
+              />
+            </div>
+            <div className="max-w-3xl mx-auto relative z-10">
+              <p className="text-gray-700 leading-relaxed mb-6 text-center hover:text-gray-900 transition-colors duration-300">
+                {t("acquire.para1")}
+              </p>
+              <p className="text-gray-700 leading-relaxed text-center hover:text-gray-900 transition-colors duration-300">
+                {t("acquire.para2")}
+              </p>
+            </div>
           </div>
         </div>
 
