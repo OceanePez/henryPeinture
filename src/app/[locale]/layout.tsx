@@ -4,6 +4,7 @@ import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import Menu from "@/components/Menu";
+import Copyright from "@/components/Copyright";
 
 export const metadata: Metadata = {
   title: "Florence Sonia Henry",
@@ -45,6 +46,7 @@ export default async function RootLayout({
         <NextIntlClientProvider>
           <Menu></Menu>
           {children}
+          <Copyright></Copyright>
         </NextIntlClientProvider>
       </body>
     </html>
