@@ -74,6 +74,7 @@ export default function AccueilView() {
       {/* Main content with staggered animations */}
       <div className="relative z-10 max-w-4xl mx-auto px-8 pb-16">
         {/* Introduction with slide-in effect */}
+
         <div
           className={`mb-16 text-center transform transition-all duration-1000 delay-700 ${
             textAnimation
@@ -90,6 +91,13 @@ export default function AccueilView() {
               </em>
               {t("intro-3")}
             </p>
+          </div>
+          <div className="1/3">
+            <img
+              src="attachments/regard.jpg"
+              alt="Description"
+              className="w-full h-auto rounded-lg shadow-md"
+            />
           </div>
         </div>
 
@@ -109,6 +117,13 @@ export default function AccueilView() {
             <p className="text-gray-700 leading-relaxed hover:text-gray-900 transition-colors duration-300">
               {t("artist.para1")}
             </p>
+            <div className="1/3">
+              <img
+                src="attachments/tab.jpg"
+                alt="Description"
+                className="w-full h-auto rounded-lg shadow-md"
+              />
+            </div>
             <p className="text-gray-700 leading-relaxed hover:text-gray-900 transition-colors duration-300">
               {t("artist.para2")}
             </p>
@@ -134,6 +149,14 @@ export default function AccueilView() {
             <p className="text-gray-700 leading-relaxed hover:text-gray-900 transition-colors duration-300">
               {t("style.para1")}
             </p>
+
+            <div className="1/3">
+              <img
+                src="attachments/tab2.jpg"
+                alt="Description"
+                className="w-full h-auto rounded-lg shadow-md"
+              />
+            </div>
             <p className="text-gray-700 leading-relaxed hover:text-gray-900 transition-colors duration-300">
               {t("style.para2")}
             </p>
