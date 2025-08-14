@@ -1,15 +1,27 @@
 "use client";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
-import { useState } from "react";
+import router from "next/router";
+import { useEffect, useState } from "react";
 
 export default function Menu() {
   const t = useTranslations("menu");
+  // Réinitialiser isMenuOpen lorsque la route change
+  useEffect(() => {
+    const handleRouteChange = () => {
+      setIsMenuOpen(false); // Réinitialise l'état à false
+    };
+
+    router.events.on('routeChangeStart', handleRouteChange); // Écoute les changements de route
+
+    return () => {
+      router.events.off('routeChangeStart', handleRouteChange); // Nettoyage de l'écouteur
+    };
+  }, [router.events]);
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
-    <div className=" bg-white overflow-hidden">
-      {/* Menu Button */}
+    <div className="bg-white overflow-hidden">
       <button
         onClick={() => setIsMenuOpen(!isMenuOpen)}
         className="fixed top-6 left-6 z-50 p-3 bg-white shadow-lg rounded-full hover:shadow-xl transition-all duration-300 transform hover:scale-105"
@@ -33,7 +45,6 @@ export default function Menu() {
         </div>
       </button>
 
-      {/* Sliding Menu */}
       <div
         className={`fixed top-0 left-0 h-full w-80 bg-white shadow-2xl z-40 transform transition-transform duration-500 ease-in-out ${
           isMenuOpen ? "translate-x-0" : "-translate-x-full"

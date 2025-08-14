@@ -20,8 +20,8 @@ const tableauxStore = create<TableauxState>((set) => ({
     try {
       const { data, error } = await supabase
         .from('Paintings')
-        .select('*');
-
+        .select('*')
+        .not('category',"is", null); 
       if (error) {
         console.error('Erreur lors de la récupération des peintures:', error.message);
         set({ error: error.message, loading: false });

@@ -44,7 +44,6 @@ export default async function RootLayout({
     <html lang={locale}>
       <body>
         <NextIntlClientProvider>
-          <Menu></Menu>
           {children}
           <Copyright></Copyright>
         </NextIntlClientProvider>
