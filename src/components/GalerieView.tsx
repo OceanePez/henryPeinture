@@ -5,6 +5,7 @@ import { Painting } from "@/models/Painting";
 import tableauxStore from "@/stores/Tableaux";
 import TableauCard from "./TableauCard";
 import { useTranslations } from "next-intl";
+
 export default function GalerieView() {
   const t = useTranslations("galerie");
 

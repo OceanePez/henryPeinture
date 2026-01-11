@@ -1,6 +1,7 @@
 import { create } from 'zustand';
-import { supabase } from '@/lib/supabaseClient';
+//import { supabase } from '@/lib/supabaseClient';
 import { Painting } from '@/models/Painting';
+import {peintures} from "../../data/peintures";
 
 export interface TableauxState {
   tableaux: Painting[];
@@ -18,15 +19,16 @@ const tableauxStore = create<TableauxState>((set) => ({
     set({ loading: true, error: null });
     console.log("Fetching paintings...");
     try {
-      const { data, error } = await supabase
-        .from('Paintings')
-        .select('*')
-        .not('category',"is", null); 
-      if (error) {
-        console.error('Erreur lors de la récupération des peintures:', error.message);
-        set({ error: error.message, loading: false });
-        return;
-      }
+      const data: Painting[] = peintures;
+      // const { data, error } = await supabase
+      //   .from('Paintings')
+      //   .select('*')
+      //   .not('category',"is", null); 
+      // if (error) {
+      //   console.error('Erreur lors de la récupération des peintures:', error.message);
+      //   set({ error: error.message, loading: false });
+      //   return;
+      // }
 
       if (data) {
         const transformedData: Painting[] = data.map((item: Painting) => ({

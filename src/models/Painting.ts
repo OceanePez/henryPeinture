@@ -5,4 +5,5 @@ export type Painting = {
   description?: string;
   image_url: string;
   created_at: string;
+  keywords?: string[];
 };
