@@ -32,11 +32,9 @@ export default function AccueilView() {
         ))}
       </div>
 
-      {/* Header with side-by-side layout */}
       <div className="relative z-10 py-16">
         <div className="max-w-6xl mx-auto px-8">
           <div className="grid md:grid-cols-2 gap-8 items-start">
-            {/* Left side - Name */}
             <div
               className={`transform transition-all duration-1500 ${
                 isVisible
@@ -51,7 +49,6 @@ export default function AccueilView() {
               </h1>
             </div>
 
-            {/* Right side - Subtitle */}
             <div
               className={`transform transition-all duration-1500 delay-500 ${
                 isVisible
@@ -71,9 +68,7 @@ export default function AccueilView() {
         </div>
       </div>
 
-      {/* Main content with staggered animations */}
       <div className="relative z-10 max-w-4xl mx-auto px-8 pb-16">
-        {/* Introduction with slide-in effect */}
 
         <div
           className={`mb-16 text-center transform transition-all duration-1000 delay-700 ${
