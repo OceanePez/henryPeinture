@@ -3,7 +3,7 @@ import "./globals.css";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
-import Menu from "@/components/Menu";
+//import Menu from "@/components/Menu";
 import Copyright from "@/components/Copyright";
 
 export const metadata: Metadata = {
