@@ -14,7 +14,7 @@ export default function Creation() {
           <input type="text" name="year" />
         </label>
         <label>
-          URL de l'image:
+          URL de l&apos;image:
           <select name="image_url" datatype="">
             <option value="tableaux/ok1.jpg">Ok 1</option>
             <option value="tableaux/ok2.jpg">Ok 2</option>
